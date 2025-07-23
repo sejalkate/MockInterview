@@ -1,0 +1,20 @@
+package com.interview;
+import java.util.Scanner;
+
+public class ScholarshipCheck 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+	    System.out.print("Enter the name: ");
+	    String name=sc.nextLine();
+	    System.out.print("Enter the address: ");
+	    String address=sc.nextLine();
+	    System.out.print("Enter the roll number: ");
+	    int rollNo=sc.nextInt();
+	    System.out.print("Enter the marks: ");
+	    double marks=sc.nextDouble();
+	    Scholarship s=new Scholarship(name, address, rollNo, marks);
+	    s.checkScholarship();
+	}
+}
